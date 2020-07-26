@@ -1,0 +1,111 @@
+
+form {
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+input[type="search"] {
+    -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+input,
+select,
+textarea  {
+	font-family: 'latoregular';
+	font-size:16px;
+	line-height:26px;
+	color:#666;
+	border:1px solid #c4c4c4;
+	background-color:#fff;
+	padding:14px 12px;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	width:100%;
+	box-sizing:border-box;
+	box-shadow:none;
+	height:50px;
+}
+select {
+	background: url(../images/firefox_tweak.png) no-repeat #fff;
+	background-position: 96% 25px;
+	-webkit-appearance: none;  /*Removes default chrome and safari style*/
+      -moz-appearance: none;
+	  
+}
+textarea {
+	height:136px;
+}
+input[type="radio"] ,input[type="checkbox"] {
+	width:15px;
+	height: 15px;
+	margin: 0 2px;
+    vertical-align: middle;	
+}
+input[type=file]{
+	padding: 0px;
+    border: 0px;
+    /*width: 38%;*/
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+	box-sizing:border-box;
+}
+.Col1 ,.Col2 ,.Col3 ,.Col4 {
+    display: inline-block;
+    vertical-align: top;
+    width: 49.6%;
+    padding: 8px 5px;
+    box-sizing: border-box;
+}
+.Col1 {
+	display:block;
+	width:99.9%;	
+}
+.Col3 {
+	width:32.8%;	
+}
+.Col4 {
+	width:24.4%;	
+}
+
+/*---- input focus css-----*/ 
+input:focus,
+select:focus, 
+textarea:focus {
+	box-shadow: 0 0 8px #cec079;
+	border: 1px solid #cec079;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+}
+
+/*------ placeholder text color-----*/
+::-webkit-input-placeholder {
+	color: #666;
+	font-family: 'latoregular';
+	font-size:15px;
+	line-height:26px;
+}
+:-moz-placeholder { /* Firefox 18- */
+	color: #666;
+	font-family: 'latoregular';
+	font-size:15px;
+	line-height:26px;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+	color: #666;
+	font-family: 'latoregular';
+	font-size:15px;
+	line-height:26px;
+}
+:-ms-input-placeholder {
+	color: #666;
+	font-family: 'latoregular';
+	font-size:15px;
+	line-height:26px;
+}

@@ -1,0 +1,659 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*---1. default reset css---*/
+/*---2. default font-size,font-family,font-color,line-height,bgcolor,ol,ul,blockquote,table,img,* :focus---*/
+/*---3. default anchor color, hr, BlackSepLine ---*/
+/*---4. Wrappers(containers)---*/
+/*---5. Container Fonts---*/
+/*---6. For Text Link ---*/
+/*---7. site selection color---*/
+/*---8. default UL-Li---*/
+/*---9 .EditorText default UL-OL css---*/
+/*---10. FullWidth, HideImg, ResImg, MaxWidth100---*/
+/*---11. grop ClearBoth , Table, Cell---*/
+/*---12. LeftRightFloat---*/
+/*---13. TextColor---*/ 
+/*---14. BgColor---*/
+/*---15. TopArrow---*/
+/*---16. letter spacing---*/
+/*---17. font-size---*/
+/*---19. Padding---*/
+/*---20. margin---*/
+/*---21. LineHeight---*/
+/*---22. FAQ css---*/
+/*---23. loader---*/
+
+/*---1. default reset css---*/
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/*---2. default font-size,font-family,font-color,line-height,bgcolor,ol,ul,blockquote,table,img,* :focus---*/
+
+
+* {
+	box-sizing: border-box;
+}
+.EditorText a {
+	transition: all ease 0.5s;
+}
+
+body {
+	background: #fff;
+	font-family: 'latoregular';
+	color: #333333;
+	font-size: 16px;
+	line-height: 26px;
+}
+ol {
+	list-style: decimal;
+	margin-left: 30px;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+	border: 0px;
+	max-width: 100%;
+	height: auto;
+}
+* :focus {
+	outline: none;
+}
+/*---3. default anchor color, hr, BlackSepLine ---*/
+a {
+	color: #5589c3;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #ed9323;
+}
+hr {
+	border: 0px;
+}
+/*---4. Wrappers(containers)---*/
+.MainWrapper {
+	margin: 0 auto;
+	padding: 0;
+	width: 1200px;
+}
+.TopMainWrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+.IdxContainWrapper {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+.InnerContainWrapper {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+/*---5. Container Fonts---*/
+.InnerContainWrapper h1 {
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 40px
+}
+.InnerContainWrapper h2 {
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 40px;
+}
+.InnerContainWrapper h3 {
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 34px;
+}
+.InnerContainWrapper h4 {
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 34px;
+}
+.InnerContainWrapper h5 {
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 28px;
+}
+.InnerContainWrapper h6 {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 26px;
+}
+/*---7. site selection color---*/
+::selection {
+	color: #fff;
+	background-color: #2965a7;
+}
+::-moz-selection {
+ color:#fff;
+ background-color:#2965a7;
+}
+::-webkit-selection {
+ color:#fff;
+ background-color:#2965a7;
+}
+/*---8. default UL-Li---*/
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px; 
+}
+ul li {
+	background-image: url(../images/bullet-1.png);
+	background-position: 5px 10px;/*R T*/
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 1px 0px;
+	padding-left: 20px;
+}
+.NoBullet li {
+	background-image: none;
+	background-position: 0px;/*R T*/
+	background-repeat: no-repeat;
+	margin: 0px; /*T R B L*/
+	padding: 0px;/*T R B L*/
+}
+/*---9 .EditorText default UL-OL css---*/
+.EditorText ul li {
+	background-image: url(../images/bullet-1.png);
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 1px 0px 1px 20px;/*T R B L*/
+	border: 0px solid;
+	display: block;
+	text-align: left;
+}
+.EditorText ol li {
+	border-bottom: 0px solid #d5d5d5;
+	list-style: decimal;
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 1px 0px 1px 0px;
+	border: 0px solid;
+	display: list-item;
+	text-align: left;
+}
+/*---10. FullWidth, HideImg, ResImg, MaxWidth100---*/
+.FullWidth {
+	float: none;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+.HideImg, .ResImg {
+	display: none !important;
+}
+.MaxWidth100 {
+	max-width: 100%;
+}
+/*---11. grop ClearBoth , Table, Cell---*/
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.ClearBoth {
+	clear: both;
+	min-height: 1px;
+}
+.Table {
+	display: table;
+	margin: 0px auto;
+	width: 100%;
+}
+.Cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+/*---12. LeftRightFloat---*/
+.LeftFloat {
+	float: left;
+}
+.RightFloat {
+	float: right;
+}
+.MarginLeftRight {
+	margin: 0 auto;
+}
+/*---13. TextColor---*/ 
+.TextColor1 {
+	color: #FFFFFF;
+}
+.TextColor2 {
+	color: #666666;
+}
+.TextColor3 {
+	color: #000000;
+}
+.TextColor4 {
+	color: #333333;
+}
+/*---14. BgColor---*/
+.BgColor1 {
+	background-color: #FFFFFF;
+}
+.BgColor2 {
+	background-color: #000;
+}
+/*---15. TopArrow---*/
+.TopArrow {
+	text-align: center;
+	display: none;
+	width: 100%;
+	padding: 20px 0 0;
+}
+.TopArrow a {
+	color: #094d8b;
+	font-size: 22px;
+	line-height: 32px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: relative;
+}
+.TopArrow a:hover {
+	color: #000;
+}
+.TopArrow .fa-stack-2x {
+	font-size: 34px;
+}
+.TopArrow .fa-inverse {
+	color: #ffffff;
+}
+.TopArrow .fa-inverse:hover {
+	color: #fff;
+}
+/*---16. letter spacing---*/
+.LetterSpacingP5 {
+	letter-spacing: 0.5px;
+}
+.LetterSpacing1 {
+	letter-spacing: 1px;
+}
+.LetterSpacing2 {
+	letter-spacing: 2px;
+}
+.LetterSpacing3 {
+	letter-spacing: 3px;
+}
+.LetterSpacing5 {
+	letter-spacing: 5px;
+}
+/*---17. font-size---*/
+.FParagraph p {
+	margin-bottom: 15px;  /*  Paragraph after spacing  */
+}
+.FParagraph1 p {
+	margin-bottom: 20px;  /*  Paragraph after spacing  */
+}
+.FParagraph p:last-child, .FParagraph1 p:last-child {
+	margin-bottom: 0px;
+}
+.TAC {
+	text-align: center;  /*  For Text aling  */
+}
+.TAL {
+	text-align: left;  /*  For Text aling  */
+}
+.TAR {
+	text-align: right;  /*  For Text aling  */
+}
+.FSize12 {
+	font-size: 12px;
+}
+.FSize13 {
+	font-size: 13px;
+}
+.FSize14 {
+	font-size: 14px;
+}
+.FSize15 {
+	font-size: 15px;
+}
+.FSize16 {
+	font-size: 16px;
+}
+.FSize17 {
+	font-size: 17px;
+}
+.FSize18 {
+	font-size: 18px;
+}
+.FSize19 {
+	font-size: 19px;
+}
+.FSize20 {
+	font-size: 20px;
+}
+.FSize22 {
+	font-size: 22px;
+}
+.FSize24 {
+	font-size: 24px;
+}
+.FSize25 {
+	font-size: 25px;
+}
+.FSize28 {
+	font-size: 28px;
+}
+.FSize30 {
+	font-size: 30px;
+}
+.FSize32 {
+	font-size: 32px;
+}
+.FSize34 {
+	font-size: 34px;
+}
+.FSize35 {
+	font-size: 35px;
+}
+.FSize40 {
+	font-size: 40px;
+}
+.FSize42 {
+	font-size: 42px;
+}
+.FSize45 {
+	font-size: 45px;
+}
+.FSize48 {
+	font-size: 48px;
+}
+.FSize50 {
+	font-size: 50px;
+}
+/*---19. Padding---*/
+
+.Padding5 {
+	padding: 5px;
+}
+.Padding10 {
+	padding: 10px;
+}
+.Padding15 {
+	padding: 15px;
+}
+.Padding20 {
+	padding: 20px;
+}
+.Padding25 {
+	padding: 25px;
+}
+.Padding30 {
+	padding: 30px;
+}
+.PaddingTB2 {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.PaddingTB5 {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.PaddingTB {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.PaddingTB15 {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.PaddingTB20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.PaddingTB25 {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.PaddingTB40 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.PaddingLR5 {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.PaddingLR {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.PaddingLR15 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.PaddingLR20 {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.PaddingLR25 {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.PaddingLR40 {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+/*---20. margin---*/
+.MarginBottom5 {
+	margin-bottom: 5px;
+}
+.MarginBottom10 {
+	margin-bottom: 10px;
+}
+.MarginBottom15 {
+	margin-bottom: 15px;
+}
+.MarginBottom20 {
+	margin-bottom: 20px;
+}
+.MarginBottom25 {
+	margin-bottom: 25px;
+}
+.MarginBottom30 {
+	margin-bottom: 30px;
+}
+.MarginBottom35 {
+	margin-bottom: 35px;
+}
+.MarginBottom40 {
+	margin-bottom: 40px;
+}
+.MarginBottom45 {
+	margin-bottom: 45px;
+}
+.MarginBottom50 {
+	margin-bottom: 50px;
+}
+.MarginTop5 {
+	margin-top: 5px;
+}
+.MarginTop10 {
+	margin-top: 10px;
+}
+.MarginTop15 {
+	margin-top: 15px;
+}
+.MarginTop20 {
+	margin-top: 20px;
+}
+.MarginTop25 {
+	margin-top: 25px;
+}
+.MarginTop30 {
+	margin-top: 30px;
+}
+.MarginTop35 {
+	margin-top: 35px;
+}
+.MarginTop40 {
+	margin-top: 40px;
+}
+.MarginTop45 {
+	margin-top: 45px;
+}
+.MarginTop50 {
+	margin-top: 50px;
+}
+/*---21. LineHeight---*/
+
+.Caps {
+	text-transform: uppercase;
+}
+.Capitalize {
+	text-transform: capitalize;
+}
+.LineHeightNormal {
+	line-height: normal
+}
+.LineHeight18 {
+	line-height: 18px;
+}
+.LineHeight22 {
+	line-height: 22px;
+}
+.LineHeight24 {
+	line-height: 24px;
+}
+.LineHeight27 {
+	line-height: 27px;
+}
+.LineHeight30 {
+	line-height: 30px;
+}
+.LineHeight32 {
+	line-height: 32px;
+}
+.LineHeight34 {
+	line-height: 34px;
+}
+.LineHeight35 {
+	line-height: 35px;
+}
+.LineHeight36 {
+	line-height: 36px;
+}
+.LineHeight38 {
+	line-height: 38px;
+}
+.LineHeight40 {
+	line-height: 40px;
+}
+.LineHeight42 {
+	line-height: 42px;
+}
+.LineHeight48 {
+	line-height: 48px;
+}
+.LineHeight52 {
+	line-height: 52px;
+}
+.LineHeight55 {
+	line-height: 55px;
+}
+/*---22. FAQ css---*/
+.Plus {
+	display: block;
+	background: url(../images/icons/plus.png);
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	right: 0;
+	top: 5px;
+}
+.Minus {
+	display: block;
+	background: url(../images/icons/minus.png);
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	right: 0;
+	top: 5px;
+}
+.qus {
+	cursor: pointer;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 11.5px 0;
+}
+.FaqTopBg {
+	position: relative;
+}
+.FaqTitle {
+	float: left;
+	display: table;
+}
+.FaqTitle i {
+	width: 30px;
+	line-height: 30px;
+	color: #7fcb31;
+	text-align: left;
+	display: table-cell;
+	font-size: 18px;
+	vertical-align: middle;
+} 
+.FaqTitle h6 {
+	font-size: 16px;
+	line-height: 26px;
+	display: table-cell;
+	vertical-align: middle;
+	font-family: 'source_sans_prosemibold';
+	position: relative;
+	padding: 0;
+	box-sizing: border-box;
+	letter-spacing: 0.5px;
+	text-transform: capitalize;
+	padding-right: 25px;
+}
+/*.FaqTitle h6:before,.DownText:before  {
+	content:'Q.';
+	font-family: 'latoheavy';
+	position:absolute;
+	left:0;
+	top:0;	
+}
+.DownText:before {
+	content:'A.';
+	top:14px;
+}*/
+.DownText {
+	background: #fff;
+	padding: 15px 0px;
+	letter-spacing: 1px;
+	position: relative;
+	box-sizing: border-box;
+}
+.TextShadow {
+	-webkit-text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
+	-moz-text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
+	text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
+}

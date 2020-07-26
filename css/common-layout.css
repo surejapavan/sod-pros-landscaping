@@ -1,0 +1,302 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root {
+  /* font-sizes */
+  --bevietnam-r: "bevietnam-regular";
+  --bevietnam-b: "bevietnam-bold";
+  --exo-r: "exodus-regular";
+  --gotham-book: "gotham-book";
+
+  /* bevietnam bold diffrence */
+  --bev-t: 0.1875em;
+  --bev-b: 0.0625rem;
+
+  /* colors */
+  --yellow: #ebe726;
+  --lightgreen-1: #017973;
+  --lightgreen-2: #027972;
+  --lightgreen-3: #007972;
+  --lightgreen-4: #007872;
+  --brown-1: #443323;
+  --brown-2: #433120;
+  --brown-3: #443222;
+  --grey-1: #444444;
+  --grey-2: #2d2d2d;
+  --white: #ffffff;
+  --black: #000000;
+
+  /* font sizes */
+  --fz40: 40px;
+  --fz35: 35px;
+  --fz27: 27px;
+  --fz20: 20px;
+  --fz19: 19px;
+  --fz16: 16px;
+  --fz15: 15px;
+  --fz14: 14px;
+  --fz13: 13px;
+  --fz11: 11px;
+}
+/** maintenance page **/
+
+.MaintenanceWrap .InnerContainWrapper {
+  width: 1000px;
+  padding: 25px 0px 0px 0px;
+  background-color: #ddd;
+  box-sizing: border-box;
+}
+.MaintenanceWrap .Logo {
+  float: none;
+  margin: 0px auto;
+  padding: 0px 0px 25px 0px;
+  box-sizing: border-box;
+}
+.MWrapper {
+  padding: 30px;
+  box-sizing: border-box;
+}
+.MaintenanceWrap .ContactInfo {
+  float: none;
+  width: 100%;
+  margin: 0px;
+  padding: 30px 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+.MaintenanceWrap .ContactInfo .CIList {
+  display: inline-block;
+  width: 32%;
+  color: #333;
+  vertical-align: top;
+  border-right: 1px solid #fff;
+  min-height: 115px;
+}
+.MaintenanceWrap .ContactInfo .CIList h3.Title {
+  font-size: 20px;
+  line-height: 30px;
+}
+.MaintenanceWrap .ContactInfo .CIList:last-child {
+  border-right: 0px solid #354966;
+}
+.MaintenanceWrap .ContactInfo .CIList table {
+  width: 100%;
+}
+.UnderMaintenanceWrapper {
+  padding: 45px 0px 50px;
+  box-sizing: border-box;
+}
+.MaintenanceWrap .ContactInfo .CIList .Phone {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+}
+.MaintenanceWrap .ContactInfo .CIList .Phone a {
+  color: #fff;
+}
+.MaintenanceWrap .ContactInfo .CIList td {
+  display: block;
+  width: 100% !important;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 !important;
+  font-size: 14px;
+  line-height: 20px;
+  box-sizing: border-box;
+}
+.MaintenanceWrap .ContactInfo .CIList td a {
+  color: #333;
+  font-size: 16px;
+  line-height: 26px;
+}
+.MaintenanceWrap .ContactInfo .CIList td a:hover {
+  color: #df3719;
+}
+.MaintenanceWrap .ContactInfo .CIList i {
+  margin: 0 auto 10px;
+  width: 35px;
+  height: 35px;
+  line-height: 38px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #df3719;
+  border-radius: 50%;
+  color: #fff;
+}
+.MaintenanceWrap .ContactInfo .CIList.Email i {
+  font-size: 18px;
+  line-height: 35px;
+}
+.MaintenanceWrap .ContactInfo .CIList span {
+  display: none;
+}
+.MaintenanceWrap {
+  display: table;
+  width: 100%;
+}
+.MaintenanceWrap .MWrap {
+  display: table-cell;
+  vertical-align: middle;
+}
+.MaintenanceWrap .ContactFormWrap .FormWrapper {
+  width: 100%;
+  box-sizing: border-box;
+}
+.MaintenanceWrap .FormWrapperWidth {
+  width: 80%;
+  margin: 0 auto;
+}
+.UnderMaintenanceWrapper .Copyright br {
+  display: none;
+}
+.MaintenanceWrap .ContactFormWrap .Col3 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px;
+  width: 32.9%;
+  box-sizing: border-box;
+}
+.UnderMaintenanceWrapper {
+  text-align: center;
+  background-color: #df3719;
+}
+.UnderMaintenanceWrapper h4 {
+  font-size: 40px;
+  line-height: 50px;
+  font-family: "Conv_ufonts.com_gotham_bold";
+  margin-bottom: 10px;
+  color: #fff;
+}
+.UnderMaintenanceWrapper h6 {
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+  font-family: "gotham_htfbook";
+  letter-spacing: 1px;
+}
+.UnderMaintenanceWrapper h6 br {
+  display: none;
+}
+/** maintenance page end **/
+
+/** floating menu **/
+.StickyBtns {
+  position: fixed;
+  bottom: 0;
+  z-index: 109;
+  right: 0;
+  width: 100%;
+}
+.StickyBtns .FillRedBorder {
+  height: 6px;
+  background-color: #df3719;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  border-top: 2px solid #fff;
+}
+.StickyBtns .MainWrapper {
+  position: relative;
+  bottom: 6px;
+}
+.StickyBtns .FSocialIcon {
+  float: right;
+  background-color: #df3719;
+  margin: 0 0 0 10px;
+  padding: 6px 15px 4px;
+  border: 2px solid #fff;
+  border-bottom: 0;
+  width: auto;
+  box-sizing: border-box;
+}
+.StickyBtns .FillRedBtn {
+  display: inline-block;
+}
+.StickyBtns .FillRedBtn a {
+  display: block;
+  background-color: #df3719;
+  border: 2px solid #fff;
+  border-bottom: 2px solid #df3719;
+  padding: 4px 33px 4px;
+  transition: ease-in 0.3s;
+  position: relative;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.StickyBtns .FillRedBtn .activator i {
+  vertical-align: middle;
+  margin: 3px 13px 0px 0px;
+  display: inline-block;
+}
+.StickyBtns .RightWrapper {
+  float: right;
+}
+.StickyBtns .MainWrapper .RightWrapper {
+  display: inline-block;
+  position: absolute;
+  bottom: -2px;
+  width: auto;
+  right: 0px;
+}
+.StickyBtns .FillRedBtn a:hover {
+  background-color: #fff;
+}
+
+/*-----StickyMenu-----------*/
+
+/** index start **/
+
+.IconWrap,
+.RedBorderImg,
+.ImgWrap,
+.PlayIcon {
+  line-height: 0;
+}
+.LightGreenBtn {
+  display: inline-block;
+}
+.LightGreenBtn a,
+.menu .LightGreenBtn a {
+  display: inline-block;
+  color: #fff;
+  font-size: var(--fz19);
+  line-height: 1.2;
+  text-transform: uppercase;
+  position: relative;
+  --pad-d: 16px;
+  padding: 8px var(--pad-d) 9px calc(var(--pad-d) + 3px);
+  /* padding: 0; */
+  background-color: var(--lightgreen-4);
+  box-sizing: border-box;
+  font-family: var(--bevietnam-b);
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.47px;
+}
+
+.LightGreenBtn a:hover,
+.menu .LightGreenBtn a:hover {
+  background-color: var(--black);
+}
+
+.menu .LightGreenBtn a i {
+  font-size: 1.2em;
+  line-height: 1;
+  vertical-align: middle;
+  color: var(--yellow);
+  margin: 0 0px 3px 0;
+}
+.FillRedBtn span:hover,
+.FillRedBtn a:hover {
+  color: #df3719;
+  background-color: #fff;
+}
+
+/** index end **/
+
+.mobile-on {
+  display: none;
+}
